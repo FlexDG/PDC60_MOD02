@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC60_MOD02.NewFolder3.PageView2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout> 
+            <Label Text="Student ID"/>
+            <Label Text="{Binding StudentInfo.StudentID}" FontSize="36"/>
+            <Entry Text ="{Binding sID}" Placeholder="StudentID"/>
+            <Label Text="Student Name"/>
+            <Label Text ="{Binding StudentInfo.StudentName}" FontSize="36"/>
+            <Entry Text="{Binding Sname}" Placeholder="Student Name"/>
+
+
+
+            <Label Text="Year Level"/>
+            <Label Text="{Binding StudentInfo. YearLevel}" FontSize="36"/>
+            <Entry Text ="{Binding sYear}" Placeholder="YearLevel"/>
+            <Label Text="Section"/>
+            <Label Text ="{Binding StudentInfo.Section}" FontSize="36"/>
+            <Entry Text="{Binding sSection}" Placeholder="Section"/>
+
+            <Label Text="Course Code"/>
+            <Label Text="{Binding StudentInfo.CourseCode}" FontSize="36"/>
+            <Entry Text ="{Binding cCode}" Placeholder="CourseCode"/>
+            <Label Text="Course"/>
+            <Label Text ="{Binding StudentInfo.Course}" FontSize="36"/>
+            <Entry Text="{Binding Course}" Placeholder="Course"/>
+
+
+
+            <Button Text="Update" Command="{Binding CommandInformationUpdate}"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
